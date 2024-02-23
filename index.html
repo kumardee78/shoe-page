@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: lightgrey;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+         
+        }
+        .shoe {
+            background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+            width: 85%;
+            height: 75%;
+            margin: auto;
+            margin-top: 5rem;
+            color: white;
+            padding: 2rem;
+            box-shadow: 0px 0px 10px black;
+           
+        }
+        .shoe-1 {
+            width: 40%;
+        }
+        .shoe-1 h1 {
+            font-size:40px;
+        }
+        .shoe-1 p {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+        .shoe img {
+            width: 700px;
+            height: 350px;
+            position: absolute;
+            top: 50px;
+            right: 15px;
+        }
+        .container::after {
+            content: "";
+            position: absolute;
+            top:0;
+            width: 100%;
+            height: 95%;
+            transform: skewY(8deg);
+            background: linear-gradient(to right, #b92b27, #1565c0);
+            z-index: -1;
+            box-shadow: 0px 0px 10px black;
+        }
+        .shoe img:hover {
+            width: 900px;
+            height: 630px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shoe">
+            <div class="shoe-1">
+                <h1>Shoe-1</h1>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet at, blanditiis saepe adipisci molestiae neque quisquam perferendis, repudiandae repellendus odio a Amet at, blanditiis saepe adipisci molestiae neque quisquam perferendisrepellat minus iste sapiente molestias nulla nam, quas perspiciatis!
+                </P>
+                <P>
+                    Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, dolore.
+                </P>
+           </div>
+            <img src="download.png" alt="">
+        </div>
+    </div>
+    
+    
+</body>
+</html>
